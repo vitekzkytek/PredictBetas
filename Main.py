@@ -44,7 +44,7 @@ if False:
 
     breakpoint = '2017-02-01'
     mod = TimeSeries.AR_predict(d[:breakpoint])
-    
+    #sm.tsa.AR(ts).fit(maxlag=1, method='cmle')
     
     plt.plot(d)
     plt.plot(mod.predict(start=breakpoint,end='2017-12-01'))

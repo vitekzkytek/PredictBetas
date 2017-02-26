@@ -60,8 +60,5 @@ def ARIMA_auto_fit(ts):
 
 def AR_predict(ts):
     return sm.tsa.AR(ts).fit(maxlag=1,method='cmle')
-    plt.plot(d)
-    plt.plot(mod.fittedvalues)
-    plt.show()
     
     #print(model)
